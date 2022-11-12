@@ -13,10 +13,10 @@ import HowItWorksSection from "../components/HowItWorksSection";
 
 const HowItWorks = () => {
   return (
-    <Box>
+    <div>
       <HowMainSection />
       <HowItWorksSection />
-    </Box>
+    </div>
   );
 };
 

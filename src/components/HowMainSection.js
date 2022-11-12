@@ -11,7 +11,7 @@ import {
 const HowMainSection = () => {
   return (
     <Flex
-      px={["50px", "70px", "70px", "100px", "200px"]}
+      px={["72px", "72px", "134px", "223px", "278px"]}
       my="90px"
       align="center"
       justify="space-between"

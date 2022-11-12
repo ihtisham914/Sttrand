@@ -26,15 +26,16 @@ const ContactSection = () => {
       bgRepeat="no-repeat"
       color="white"
       direction={["column", "row", "row", "row", "row"]}
+      alignContent={{
+        base: "center",
+        lg: "flex-start",
+        md: "flex-start",
+        "2xl": "flex-start",
+      }}
     >
       <VStack
-        alignSelf={{
-          base: "center",
-          md: "flex-start",
-          lg: "flex-start",
-          "2xl": "flex-start",
-        }}
-        width="40%"
+        width={["100%", "40%", "40p%", "40%", "40%"]}
+        mb={["20px", "0", "0", "0", "0"]}
       >
         <VStack align="self-start">
           <Heading

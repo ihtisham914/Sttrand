@@ -13,8 +13,8 @@ import {
 const HeroSection = () => {
   return (
     <Flex
-      h="90vh"
-      px={["50px", "70px", "70px", "100px", "200px"]}
+      h={["150vh", "90vh", "90vh", "90vh", "90vh"]}
+      px={["72px", "72px", "134px", "223px", "278px"]}
       mt="90px"
       alignContent="center"
       gap="22px"
@@ -25,14 +25,20 @@ const HeroSection = () => {
         lg: "row",
         "2xl": "row",
       }}
-      bgImage="url('/images/herodesign.png')"
+      bgImage={[
+        // "url('/images/mobilehero.png)",
+        // "url('/images/tablethero.png)",
+        // "url('/images/tablethero.png)",
+        // "url('/images/laptophero.png')",
+        "url('/images/herodesign.png')",
+      ]}
       bgPosition="center"
       bgSize="contain"
       bgRepeat="no-repeat"
     >
-      <VStack w="460px" spacing="3" mt="10">
+      <VStack spacing="3" mt="10">
         <Heading
-          fontSize={["24px", "20px", "20px", "40px", "48px"]}
+          fontSize={["24px", "20px", "20px", "40px", "62px"]}
           alignSelf={{
             base: "center",
             md: "flex-start",
@@ -54,7 +60,7 @@ const HeroSection = () => {
             lg: "flex-start",
             "2xl": "flex-start",
           }}
-          fontSize={["14px", "10px", "10px", "16px", "22px"]}
+          fontSize={["14px", "10px", "10px", "18px", "25px"]}
         >
           Realizing the power of community. Sttrand is the social commerce
           infractrure for the continent of Africa
@@ -69,13 +75,13 @@ const HeroSection = () => {
         >
           <Image
             src="./images/appstore.png"
-            w={["197px", "97px", "152px", "228px", "228px"]}
-            h={["65px", "28px", "28px", "43px", "65px"]}
+            w={["97px", "97px", "152px", "152px", "228px"]}
+            h={["28px", "28px", "43px", "43px", "65px"]}
           ></Image>
           <Image
             src="./images/google.png"
-            w={["197px", "97px", "152px", "228px", "228px"]}
-            h={["65px", "28px", "28px", "43px", "65px"]}
+            w={["97px", "97px", "152px", "228px", "228px"]}
+            h={["28px", "28px", "43px", "43px", "65px"]}
           ></Image>
         </HStack>
       </VStack>
@@ -92,8 +98,8 @@ const HeroSection = () => {
           mr="90px"
           src="./images/heroimage.png"
           alt="Hero image"
-          w="230px"
-          h="520px"
+          w={["201px", "189px", "289px", "287px", "273px"]}
+          h={["437px", "411px", "411px", "623px", "595px"]}
         />
       </Box>
     </Flex>

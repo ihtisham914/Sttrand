@@ -15,7 +15,7 @@ import {
 const HowItWorksSection = () => {
   return (
     <SimpleGrid
-      px={["50px", "70px", "70px", "100px", "200px"]}
+      px={["72px", "72px", "134px", "223px", "278px"]}
       py="180px"
       bg="brand"
       color="white"
@@ -27,7 +27,7 @@ const HowItWorksSection = () => {
       <GridItem p="50px" bg="white" color="#000" borderRadius="xl">
         <VStack spacing="30px">
           <HStack>
-            <Box py="10px" px="20px" border="4px" borderRadius="xl">
+            <Box py="10px" px="15px" border="4px" borderRadius="xl">
               <VStack>
                 <Heading fontSize="12px">35 GHC</Heading>
                 <Text fontSize="8px">Buy yourself</Text>
@@ -40,7 +40,7 @@ const HowItWorksSection = () => {
               </VStack>
             </Box>
           </HStack>
-          <Box width="262px" height="102px">
+          <Box width="200px" height="100px">
             <Text fontSize={["10px", "10px", "14px", "14px", "12px"]}>
               Consumers are presented with two price options on everyday
               household consumption goods (e.g. groceries, etc)
@@ -63,7 +63,7 @@ const HowItWorksSection = () => {
               fill="#0e203f"
             />
           </svg>
-          <Box width="262px" height="102px">
+          <Box width="200px" height="100px">
             <Text fontSize={["10px", "10px", "14px", "14px", "12px"]}>
               Consumers have the option to purchase common household items
               individually at a standard retail price or they can partner with a
@@ -88,7 +88,7 @@ const HowItWorksSection = () => {
               fill="#0e203f"
             />
           </svg>
-          <Box width="262px" height="102px">
+          <Box width="200px" height="100px">
             <Text fontSize={["10px", "10px", "14px", "14px", "12px"]}>
               The family/friend or other consumers who have received a request
               to partner to purchase items have 24 hours to make their purchase.
@@ -111,7 +111,7 @@ const HowItWorksSection = () => {
               fill="#0e203f"
             />
           </svg>
-          <Box width="262px" height="102px">
+          <Box width="200px" height="100px">
             <Text fontSize={["10px", "10px", "14px", "14px", "12px"]}>
               The items can be picked up at your local market or will be
               delivered once the order has been competed and placed.

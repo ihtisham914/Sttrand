@@ -15,7 +15,7 @@ const PurposeSection = () => {
     <Box
       py="205px"
       bg="bgcolor"
-      px={["50px", "70px", "70px", "100px", "200px"]}
+      px={["72px", "72px", "134px", "223px", "278px"]}
     >
       <Heading
         fontSize={["12px", "20px", "40px", "40px", "38px"]}

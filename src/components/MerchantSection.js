@@ -4,13 +4,16 @@ import ButtonAction from "./ButtonAction";
 const MerchantSection = () => {
   return (
     <VStack
-      px={["50px", "138px", "138px", "222px", "300px"]}
       my="90px"
       py="65.5px"
       align="center"
       justifyContent="center"
       bg="brand"
       spacing="100px"
+      bgImage="url('/images/merchantbackground.png')"
+      bgPosition="center"
+      bgSize="cover"
+      bgRepeat="no-repeat"
     >
       <VStack spacing={10}>
         <Heading
@@ -30,13 +33,13 @@ const MerchantSection = () => {
       <VStack spacing="50px">
         <Image
           src="./images/dashboardone.png"
-          w={["260px", "547px", "547px", "834px", "1320px"]}
-          h={["130px", "270px", "270px", "420px", "600px"]}
+          w={["259px", "547px", "547px", "834px", "1320px"]}
+          h={["160px", "340px", "340px", "517px", "818px"]}
         ></Image>
         <Image
           src="./images/dashboardtwo.png"
-          w={["260px", "547px", "547px", "834px", "1320px"]}
-          h={["130px", "270px", "270px", "420px", "600px"]}
+          w={["259px", "547px", "547px", "834px", "1320px"]}
+          h={["160px", "340px", "340px", "517px", "818px"]}
         ></Image>
       </VStack>
     </VStack>

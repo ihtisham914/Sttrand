@@ -5,6 +5,7 @@ const ButtonAction = ({ text, size, bgcolor, color }) => {
   return (
     <Button
       fontSize="14px"
+      _hover={{ bg: "#1d3462" }}
       rounded={{ base: "full", md: "xl", lg: "xl", "2xl": "xl" }}
       px="6"
       bg={bgcolor}

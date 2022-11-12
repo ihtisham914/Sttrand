@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <Box mt="90px">
       <Flex
-        px={["50px", "210px", "210px", "300px", "250px"]}
+        px={["50px", "210px", "210px", "328px", "500px"]}
         gap={["20px", "20px", "50px", "70px", "100px"]}
         align="center"
         mb={["30px", "40px", "40px", "60px", "74px"]}

@@ -11,7 +11,7 @@ import {
 
 const AboutMainSection = () => {
   return (
-    <Box px={["50px", "70px", "70px", "100px", "200px"]} my="90px">
+    <Box px={["72px", "72px", "134px", "223px", "278px"]} my="90px">
       <Flex
         align="center"
         mb="25px"
@@ -27,7 +27,7 @@ const AboutMainSection = () => {
       >
         <VStack width={["100%", "40%", "40%", "40%", "40%"]}>
           <Heading
-            fontSize={["24px", "20px", "20px", "36px", "48px"]}
+            fontSize={["24px", "20px", "20px", "40px", "62px"]}
             fontWeight="regular"
             alignSelf={{
               base: "center",
@@ -39,7 +39,7 @@ const AboutMainSection = () => {
             About Us
           </Heading>
           <Text
-            fontSize={["14px", "12px", "12px", "14px", "18px"]}
+            fontSize={["14px", "12px", "12px", "18px", "25px"]}
             alignSelf={{
               base: "center",
               md: "flex-start",
@@ -89,7 +89,7 @@ const AboutMainSection = () => {
           >
             The Market shopping experience leaves consumers bargaining on goods
             that fluctuate in price at any given time. No simplified way exists
-            to partner together using social apps with others to{" "}
+            to partner together using social apps with others to
             <Heading
               color="texthighlight"
               fontSize={["14px", "12px", "12px", "14px", "18px"]}

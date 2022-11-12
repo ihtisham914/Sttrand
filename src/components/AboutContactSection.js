@@ -12,7 +12,7 @@ import {
 
 const AboutContactSection = () => {
   return (
-    <Box px={["50px", "70px", "70px", "100px", "200px"]} my="120px">
+    <Box px={["72px", "72px", "134px", "223px", "278px"]} my="120px">
       <VStack align="center" spacing={["20px", "20px", "20px", "50px", "27px"]}>
         <Heading
           align="center"

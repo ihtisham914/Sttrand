@@ -13,7 +13,11 @@ import {
 
 const AppSection = () => {
   return (
-    <Box px={["50px", "70px", "70px", "100px", "200px"]} py="80px" bg="bgcolor">
+    <Box
+      px={["72px", "72px", "134px", "223px", "278px"]}
+      py="80px"
+      bg="bgcolor"
+    >
       <VStack align="center" spacing="50">
         <Heading
           fontSize={["14px", "20px", "20px", "30px", "38px"]}
