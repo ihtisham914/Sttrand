@@ -1,14 +1,14 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
 
-const ButtonAction = ({ text, size }) => {
+const ButtonAction = ({ text, size, bgcolor, color }) => {
   return (
     <Button
       fontSize="14px"
-      rounded="xl"
+      rounded={{ base: "full", md: "xl", lg: "xl", "2xl": "xl" }}
       px="6"
-      bg="brand"
-      color="#fff"
+      bg={bgcolor}
+      color={color}
       ml="83"
       shadow="sm"
       size={size}

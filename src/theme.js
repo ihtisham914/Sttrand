@@ -7,6 +7,7 @@ const theme = extendTheme(
       brand: "#12203D",
       texthighlight: "#73C9F0",
       bgcolor: "#FBFBFB",
+      white: "#FFF",
     },
     fonts: {
       body: "Montserrat",
