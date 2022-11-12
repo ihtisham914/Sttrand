@@ -95,7 +95,8 @@ const HeroSection = () => {
             lg: "flex-start",
             "2xl": "flex-start",
           }}
-          mr="90px"
+          mt="20px"
+          mr="100px"
           src="./images/heroimage.png"
           alt="Hero image"
           w={["201px", "189px", "289px", "287px", "273px"]}

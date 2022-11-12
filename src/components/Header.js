@@ -19,7 +19,7 @@ const Header = () => {
   const [display, changeDisplay] = useState("none");
   return (
     <Box
-      px={["72px", "72px", "134px", "223px", "278px"]}
+      px={["72px", "134px", "134px", "223px", "278px"]}
       mt="51px"
       align="center"
     >
@@ -31,7 +31,7 @@ const Header = () => {
         />
         <Spacer />
         <Flex>
-          <Box display={["none", "flex", "flex", "flex", "flex"]}>
+          <Box display={["none", "flex", "flex", "flex"]}>
             <HStack spacing="34px">
               <Link size={["12px", "10px", "14px", "14px", "14px"]}>Home</Link>
               <Link size={["12px", "10px", "14px", "14px", "14px"]}>
@@ -41,7 +41,7 @@ const Header = () => {
                 How it works
               </Link>
             </HStack>
-            <HStack>
+            <HStack ml="83px">
               <ButtonAction
                 text="Get the App"
                 size="md"

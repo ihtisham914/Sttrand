@@ -10,7 +10,6 @@ const ButtonAction = ({ text, size, bgcolor, color }) => {
       px="6"
       bg={bgcolor}
       color={color}
-      ml="83"
       shadow="sm"
       size={size}
     >

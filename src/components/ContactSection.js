@@ -84,7 +84,7 @@ const ContactSection = () => {
       <SimpleGrid
         bg="white"
         py="75px"
-        px="60px"
+        px={["20px", "30px", "40px", "60px", "60px"]}
         columns={["1", "1", "1", "1", "2"]}
         rowGap={["10px", "20px", "20px", "40px", "60px"]}
         columnGap="30px"
@@ -106,7 +106,13 @@ const ContactSection = () => {
           <Textarea placeholder="Address" />
         </GridItem>
         <GridItem>
-          <ButtonAction text="Submit" bgcolor="brand" />
+          <Flex w="100%">
+            <ButtonAction
+              alignSelf="flex-start"
+              text="Submit"
+              bgcolor="brand"
+            />
+          </Flex>
         </GridItem>
       </SimpleGrid>
     </Flex>

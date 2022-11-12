@@ -1756,7 +1756,7 @@
   dependencies:
     "@chakra-ui/form-control" "2.0.11"
 
-"@chakra-ui/theme-tools@2.0.12":
+"@chakra-ui/theme-tools@^2.0.12", "@chakra-ui/theme-tools@2.0.12":
   "integrity" "sha512-mnMlKSmXkCjHUJsKWmJbgBTGF2vnLaMLv1ihkBn5eQcCubMQrBLTiMAEFl5pZdzuHItU6QdnLGA10smcXbNl0g=="
   "resolved" "https://registry.npmjs.org/@chakra-ui/theme-tools/-/theme-tools-2.0.12.tgz"
   "version" "2.0.12"
