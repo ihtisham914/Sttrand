@@ -6,10 +6,11 @@ import {
   GridItem,
   Heading,
   Text,
+  Link,
   Box,
-  HStack,
 } from "@chakra-ui/react";
 import React from "react";
+import { company, privacy } from "../links";
 
 const Footer = () => {
   return (
@@ -32,7 +33,10 @@ const Footer = () => {
           h={["20px", "20px", "20px", "31px", "47px"]}
           w={["90px", "90px", "90px", "141px", "211px"]}
         />
-        <SimpleGrid columns={3} spacing="100px">
+        <SimpleGrid
+          columns={3}
+          spacing={["20px", "30px", "40px", "70px", "80px"]}
+        >
           <GridItem>
             <VStack align="flex-start">
               <Heading
@@ -49,54 +53,23 @@ const Footer = () => {
               >
                 Company
               </Heading>
-              <Text
-                fontSize={{
-                  base: "6px",
-                  sm: "6px",
-                  lg: "6px",
-                  xl: "10px",
-                  "2xl": "18px",
-                }}
-                textTransform="uppercase"
-              >
-                About Us
-              </Text>
-              <Text
-                fontSize={{
-                  base: "6px",
-                  sm: "6px",
-                  lg: "6px",
-                  xl: "10px",
-                  "2xl": "18px",
-                }}
-                textTransform="uppercase"
-              >
-                How it works
-              </Text>
-              <Text
-                fontSize={{
-                  base: "6px",
-                  sm: "6px",
-                  lg: "6px",
-                  xl: "10px",
-                  "2xl": "18px",
-                }}
-                textTransform="uppercase"
-              >
-                contact
-              </Text>
-              <Text
-                fontSize={{
-                  base: "6px",
-                  sm: "6px",
-                  lg: "6px",
-                  xl: "10px",
-                  "2xl": "18px",
-                }}
-                textTransform="uppercase"
-              >
-                support
-              </Text>
+              {company.map((compny, index) => (
+                <Link
+                  key={index}
+                  href={compny.link}
+                  fontSize={{
+                    base: "6px",
+                    sm: "6px",
+                    lg: "6px",
+                    xl: "10px",
+                    "2xl": "18px",
+                  }}
+                  textTransform="uppercase"
+                  textdecoration="none"
+                >
+                  {compny.name}
+                </Link>
+              ))}
             </VStack>
           </GridItem>
           <GridItem>
@@ -114,30 +87,23 @@ const Footer = () => {
               >
                 Privacy and terms
               </Heading>
-              <Text
-                fontSize={{
-                  base: "6px",
-                  sm: "6px",
-                  lg: "6px",
-                  xl: "10px",
-                  "2xl": "18px",
-                }}
-                textTransform="uppercase"
-              >
-                Privacy policy
-              </Text>
-              <Text
-                fontSize={{
-                  base: "6px",
-                  sm: "6px",
-                  lg: "6px",
-                  xl: "10px",
-                  "2xl": "18px",
-                }}
-                textTransform="uppercase"
-              >
-                terms of use
-              </Text>
+              {privacy.map((privacy, index) => (
+                <Link
+                  key={index}
+                  href={privacy.link}
+                  fontSize={{
+                    base: "6px",
+                    sm: "6px",
+                    lg: "6px",
+                    xl: "10px",
+                    "2xl": "18px",
+                  }}
+                  textTransform="uppercase"
+                  textdecoration="none"
+                >
+                  {privacy.name}
+                </Link>
+              ))}
             </VStack>
           </GridItem>
           <GridItem>
@@ -156,7 +122,8 @@ const Footer = () => {
               >
                 Help
               </Heading>
-              <Text
+              <Link
+                href="/"
                 fontSize={{
                   base: "6px",
                   sm: "6px",
@@ -165,9 +132,10 @@ const Footer = () => {
                   "2xl": "18px",
                 }}
                 textTransform="uppercase"
+                textdecoration="none"
               >
-                Faqs
-              </Text>
+                FAQs
+              </Link>
             </VStack>
           </GridItem>
         </SimpleGrid>

@@ -6,6 +6,7 @@ import HowItWorks from "./routes/HowItWorks";
 import Contact from "./routes/Contact";
 import Privacy from "./routes/Privacy";
 import Footer from "./components/Footer";
+import Error from "./routes/Error";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/howitworks" element={<HowItWorks />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/privacy" element={<Privacy />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Routes>
       </Router>
       <Footer />

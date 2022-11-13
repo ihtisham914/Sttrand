@@ -2,14 +2,12 @@ import { useState } from "react";
 import {
   Flex,
   Box,
-  Heading,
   HStack,
   Link,
   Spacer,
   Image,
   VStack,
   IconButton,
-  Collapse,
 } from "@chakra-ui/react";
 import { CloseIcon } from "@chakra-ui/icons";
 // import { NavLink  } from "react-router-dom";

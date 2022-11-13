@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Heading, VStack, Image } from "@chakra-ui/react";
+import { Heading, VStack, Image } from "@chakra-ui/react";
 import ButtonAction from "./ButtonAction";
 const MerchantSection = () => {
   return (

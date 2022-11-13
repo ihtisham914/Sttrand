@@ -1,11 +1,9 @@
-import React from "react";
+import { React, useState } from "react";
 import {
-  Box,
   Flex,
   Heading,
   Text,
   VStack,
-  Image,
   Spacer,
   SimpleGrid,
   GridItem,
@@ -15,6 +13,26 @@ import {
 import ButtonAction from "./ButtonAction";
 
 const ContactSection = () => {
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+
+  const handleFnameChange = (e) => setFname(e.target.value);
+  const handleLnameChange = (e) => setLname(e.target.value);
+  const handleNmberChange = (e) => setNumber(e.target.value);
+  const handleEmailChange = (e) => setEmail(e.target.value);
+  const handleAddressChange = (e) => setAddress(e.target.value);
+
+  const handleSubmit = (e) => {
+    // e.preventdefault();
+    setFname("");
+    setLname("");
+    setNumber("");
+    setEmail("");
+    setAddress("");
+  };
   return (
     <Flex
       px={["50px", "70px", "70px", "100px", "278px"]}
@@ -54,12 +72,7 @@ const ContactSection = () => {
           <Flex>
             <Text
               fontSize={["12px", "12px", "12px", "18px", "18px"]}
-              alignSelf={{
-                base: "center",
-                md: "flex-start",
-                lg: "flex-start",
-                "2xl": "flex-start",
-              }}
+              textAlign={["center", "start", "start", "start", "start"]}
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry.
@@ -89,28 +102,54 @@ const ContactSection = () => {
         rowGap={["10px", "20px", "20px", "40px", "60px"]}
         columnGap="30px"
         borderRadius="2xl"
+        color="black"
       >
         <GridItem>
-          <Input type="text" placeholder="First Name" />
+          <Input
+            type="text"
+            placeholder="First Name"
+            value={fname}
+            onChange={handleFnameChange}
+          />
         </GridItem>
         <GridItem>
-          <Input type="text" placeholder="Last Name" />
+          <Input
+            type="text"
+            placeholder="Last Name"
+            value={lname}
+            onChange={handleLnameChange}
+          />
         </GridItem>
         <GridItem>
-          <Input type="text" placeholder="Phone Number" />
+          <Input
+            type="text"
+            placeholder="Phone Number"
+            value={number}
+            onChange={handleNmberChange}
+          />
         </GridItem>
         <GridItem>
-          <Input type="email" placeholder="Email" />
+          <Input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={handleEmailChange}
+          />
         </GridItem>
         <GridItem colSpan={["1", "1", "1", "1", "2"]}>
-          <Textarea placeholder="Address" />
+          <Textarea
+            placeholder="Address"
+            value={address}
+            onChange={handleAddressChange}
+          />
         </GridItem>
         <GridItem>
-          <Flex w="100%">
+          <Flex w="100%" onClick={handleSubmit}>
             <ButtonAction
               alignSelf="flex-start"
               text="Submit"
               bgcolor="brand"
+              color="white"
             />
           </Flex>
         </GridItem>

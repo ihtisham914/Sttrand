@@ -6,7 +6,7 @@ import {
   Text,
   VStack,
   Image,
-  Spacer,
+  Highlight,
 } from "@chakra-ui/react";
 
 const AboutMainSection = () => {
@@ -46,17 +46,17 @@ const AboutMainSection = () => {
               lg: "flex-start",
               "2xl": "flex-start",
             }}
+            textAlign={["center", "start", "start", "start", "start"]}
           >
-            Sttrand is a
-            <Heading
-              color="texthighlight"
-              fontSize={["14px", "12px", "12px", "14px", "18px"]}
+            <Highlight
+              query="social commerce marketplace"
+              styles={{ fontWeight: "bold", color: "texthighlight" }}
             >
-              social commerce marketplace
-            </Heading>
-            for the continent of Africa. We know the cost of daily household
-            goods are an important concern for consumers looking to provide for
-            themselves and loved ones.
+              Sttrand is a social commerce marketplace for the continent of
+              Africa. We know the cost of daily household goods are an important
+              concern for consumers looking to provide for themselves and loved
+              ones.
+            </Highlight>
           </Text>
         </VStack>
         <Image
@@ -79,24 +79,25 @@ const AboutMainSection = () => {
       >
         <VStack width={["100%", "40%", "40%", "40%", "40%"]}>
           <Text
-            fontSize={["14px", "12px", "12px", "14px", "18px"]}
+            fontSize={["14px", "12px", "12px", "18px", "25px"]}
             alignSelf={{
               base: "center",
               md: "flex-start",
               lg: "flex-start",
               "2xl": "flex-start",
             }}
+            textAlign={["center", "start", "start", "start", "start"]}
           >
-            The Market shopping experience leaves consumers bargaining on goods
-            that fluctuate in price at any given time. No simplified way exists
-            to partner together using social apps with others to
-            <Heading
-              color="texthighlight"
-              fontSize={["14px", "12px", "12px", "14px", "18px"]}
+            <Highlight
+              query="increase a consumer’s purchasing power on household items"
+              styles={{ fontWeight: "bold", color: "texthighlight" }}
             >
-              increase a consumer’s purchasing power on household items
-            </Heading>{" "}
-            within the continent of Africa today.
+              The Market shopping experience leaves consumers bargaining on
+              goods that fluctuate in price at any given time. No simplified way
+              exists to partner together using social apps with others to
+              increase a consumer’s purchasing power on household items within
+              the continent of Africa today.
+            </Highlight>
           </Text>
         </VStack>
         <Image

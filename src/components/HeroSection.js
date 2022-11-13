@@ -62,6 +62,7 @@ const HeroSection = () => {
             lg: "flex-start",
             "2xl": "flex-start",
           }}
+          textAlign={["center", "start", "start", "start", "start"]}
           fontSize={["14px", "10px", "10px", "18px", "25px"]}
         >
           Realizing the power of community. Sttrand is the social commerce

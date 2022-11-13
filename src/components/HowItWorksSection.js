@@ -1,13 +1,10 @@
 import React from "react";
 import {
   Box,
-  Flex,
   Heading,
   Text,
   VStack,
   HStack,
-  Image,
-  Spacer,
   SimpleGrid,
   GridItem,
 } from "@chakra-ui/react";

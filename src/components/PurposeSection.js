@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  VStack,
-  HStack,
-  Image,
-  Spacer,
-  Divider,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 const PurposeSection = () => {
   return (
     <Box

@@ -1,13 +1,12 @@
 import React from "react";
 import {
   Box,
-  Flex,
   Heading,
   Text,
   VStack,
   HStack,
   Image,
-  Spacer,
+  Highlight,
 } from "@chakra-ui/react";
 
 const AboutContactSection = () => {
@@ -18,8 +17,18 @@ const AboutContactSection = () => {
           align="center"
           fontSize={["14px", "16px", "16px", "29px", "44px"]}
         >
-          Our goal is to increase the purchasing power of the people within the
-          continent while creating disposable income for our customers.{" "}
+          <Highlight
+            query="&ldquo; &rdquo;"
+            styles={{
+              fontsize: "30px",
+              fontWeight: "bold",
+              color: "texthighlight",
+            }}
+          >
+            &ldquo;Our goal is to increase the purchasing power of the people
+            within the continent while creating disposable income for our
+            customers&rdquo;
+          </Highlight>
         </Heading>
         <Text
           align="center"

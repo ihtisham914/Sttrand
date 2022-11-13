@@ -1,16 +1,11 @@
 import React from "react";
-import main from "../assets/PrivacyData";
 import {
-  Box,
   Flex,
   Heading,
   Text,
   Link,
   UnorderedList,
   ListItem,
-  VStack,
-  Image,
-  Spacer,
 } from "@chakra-ui/react";
 
 const PrivacyBodySection = () => {

@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  VStack,
-  Image,
-  Spacer,
-} from "@chakra-ui/react";
+import { Flex, Heading, Text, VStack, Image } from "@chakra-ui/react";
 const HowMainSection = () => {
   return (
     <Flex
@@ -32,17 +24,13 @@ const HowMainSection = () => {
             lg: "flex-start",
             "2xl": "flex-start",
           }}
+          textAlign={["center", "start", "start", "start", "start"]}
           fontSize={["24px", "30px", "30px", "62px", "62px"]}
         >
           How it <Text color="texthighlight">works</Text>
         </Heading>
         <Text
-          alignSelf={{
-            base: "center",
-            md: "flex-start",
-            lg: "flex-start",
-            "2xl": "flex-start",
-          }}
+          textAlign={["center", "start", "start", "start", "start"]}
           fontSize={["14px", "12px", "12px", "18px", "22px"]}
         >
           Sttrand is a platform that utilizes social media (WhatsApp, Facebook

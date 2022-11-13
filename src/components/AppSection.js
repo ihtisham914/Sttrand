@@ -1,7 +1,6 @@
 import React from "react";
 import ButtonAction from "./ButtonAction";
 import {
-  Flex,
   VStack,
   Heading,
   Text,

@@ -4,9 +4,7 @@ import {
   Heading,
   Text,
   VStack,
-  HStack,
   Image,
-  Spacer,
   SimpleGrid,
   GridItem,
 } from "@chakra-ui/react";
@@ -34,6 +32,7 @@ const PaymentSection = () => {
             lg: "flex-start",
             "2xl": "flex-start",
           }}
+          textAlign={["center", "start", "start", "start", "start"]}
           fontSize={["19px", "19px", "19px", "30px", "48px"]}
           fontWeight="regular"
         >
@@ -46,6 +45,7 @@ const PaymentSection = () => {
             lg: "flex-start",
             "2xl": "flex-start",
           }}
+          textAlign={["center", "start", "start", "start", "start"]}
           fontSize={["8px", "8px", "8px", "14px", "22px"]}
         >
           Different Delivery Options Available
