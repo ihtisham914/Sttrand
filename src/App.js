@@ -1,6 +1,4 @@
 import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import AppSection from "./components/AppSection";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./routes/Home";
 import About from "./routes/About";

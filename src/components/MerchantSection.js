@@ -23,12 +23,7 @@ const MerchantSection = () => {
         >
           Become Merchant
         </Heading>
-        <ButtonAction
-          text="Learn More"
-          size="lg"
-          bgcolor="#fff"
-          color="brand"
-        />
+        <ButtonAction text="Learn More" bgcolor="#fff" color="brand" />
       </VStack>
       <VStack spacing="50px">
         <Image

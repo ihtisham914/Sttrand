@@ -22,7 +22,7 @@ const HowItWorksSection = () => {
       columns={["1", "2", "2", "2", "4"]}
       justifyItems="center"
       alignItems="center"
-      spacing="30px"
+      spacing={["30px", "30px", "100px", "30px", "30px"]}
     >
       <GridItem p="50px" bg="white" color="#000" borderRadius="xl">
         <VStack spacing="30px">

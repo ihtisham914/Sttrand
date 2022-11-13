@@ -8,14 +8,16 @@ import {
   Image,
   Spacer,
   Text,
+  Link,
 } from "@chakra-ui/react";
+// import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
     <Flex
-      h={["150vh", "90vh", "90vh", "90vh", "90vh"]}
+      minH={["120vh", "100vh", "100vh", "90vh", "90vh"]}
       px={["72px", "72px", "134px", "223px", "278px"]}
-      mt="90px"
+      mt={["47px", "90px", "90px", "90px", "90px"]}
       alignContent="center"
       gap="22px"
       direction={{
@@ -26,13 +28,13 @@ const HeroSection = () => {
         "2xl": "row",
       }}
       bgImage={[
-        // "url('/images/mobilehero.png)",
-        // "url('/images/tablethero.png)",
-        // "url('/images/tablethero.png)",
-        // "url('/images/laptophero.png')",
+        "url('/images/mobilehero.png')",
+        "url('/images/tablethero.png')",
+        "url('/images/tablethero.png')",
+        "url('/images/laptophero.png')",
         "url('/images/herodesign.png')",
       ]}
-      bgPosition="center"
+      bgPosition={["bottom", "center", "center", "center", "center"]}
       bgSize="contain"
       bgRepeat="no-repeat"
     >
@@ -73,21 +75,28 @@ const HeroSection = () => {
             "2xl": "flex-start",
           }}
         >
-          <Image
-            src="./images/appstore.png"
-            w={["97px", "97px", "152px", "152px", "228px"]}
-            h={["28px", "28px", "43px", "43px", "65px"]}
-          ></Image>
-          <Image
-            src="./images/google.png"
-            w={["97px", "97px", "152px", "228px", "228px"]}
-            h={["28px", "28px", "43px", "43px", "65px"]}
-          ></Image>
+          <Link href="https://www.apple.com/app-store/" isExternal>
+            <Image
+              src="./images/appstore.png"
+              w={["97px", "97px", "152px", "152px", "228px"]}
+              h={["28px", "28px", "43px", "43px", "65px"]}
+            ></Image>
+          </Link>
+          <Link href="https://play.google.com/store/apps" isExternal>
+            <Image
+              src="./images/google.png"
+              w={["97px", "97px", "152px", "153px", "228px"]}
+              h={["28px", "28px", "43px", "43px", "65px"]}
+            ></Image>
+          </Link>
         </HStack>
       </VStack>
       <Spacer />
 
-      <Box className="hero-design">
+      <Box
+        className="hero-design"
+        display={["none", "flex", "flex", "flex", "flex"]}
+      >
         <Image
           alignSelf={{
             base: "center",
@@ -95,11 +104,11 @@ const HeroSection = () => {
             lg: "flex-start",
             "2xl": "flex-start",
           }}
-          mt="20px"
-          mr="100px"
+          mt={["0", "0", "0", "0", "20px"]}
+          mr={["0", "30px", "130px", "53px", "90px"]}
           src="./images/heroimage.png"
-          alt="Hero image"
-          w={["201px", "189px", "289px", "287px", "273px"]}
+          // alt="Hero image"
+          w={["201px", "189px", "189px", "287px", "273px"]}
           h={["437px", "411px", "411px", "623px", "595px"]}
         />
       </Box>

@@ -6,12 +6,13 @@ const ButtonAction = ({ text, size, bgcolor, color }) => {
     <Button
       fontSize="14px"
       _hover={{ bg: "#1d3462" }}
+      _active={{ bg: "#1d3462" }}
       rounded={{ base: "full", md: "xl", lg: "xl", "2xl": "xl" }}
       px="6"
       bg={bgcolor}
       color={color}
       shadow="sm"
-      size={size}
+      size={["sm", "md", "md", "lg"]}
     >
       {text}
     </Button>

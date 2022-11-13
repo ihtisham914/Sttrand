@@ -8,6 +8,7 @@ import Montserrat from "@fontsource/montserrat";
 //   lg: "80em",
 //   xl: "120em",
 // });
+const fonts = Montserrat;
 
 const theme = extendTheme({
   // breakpoints,
@@ -18,9 +19,7 @@ const theme = extendTheme({
     bgcolor: "#FBFBFB",
     white: "#FFF",
   },
-  fonts: {
-    body: "Montserrat",
-  },
+  fonts,
 });
 
 export default theme;

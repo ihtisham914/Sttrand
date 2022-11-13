@@ -12,7 +12,7 @@ import {
   Collapse,
 } from "@chakra-ui/react";
 import { CloseIcon } from "@chakra-ui/icons";
-import { Link as RouteLink } from "react-router-dom";
+// import { NavLink  } from "react-router-dom";
 import ButtonAction from "./ButtonAction";
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
       mt="51px"
       align="center"
     >
-      <Flex>
+      <Flex align="center">
         <Image
           src="./images/logo.png"
           h={["15px", "15px", "15px", "22px", "33px"]}
@@ -33,22 +33,36 @@ const Header = () => {
         <Flex>
           <Box display={["none", "flex", "flex", "flex"]}>
             <HStack spacing="34px">
-              <Link size={["12px", "10px", "14px", "14px", "14px"]}>Home</Link>
-              <Link size={["12px", "10px", "14px", "14px", "14px"]}>
+              <Link
+                href="/"
+                size={["12px", "10px", "14px", "14px", "14px"]}
+                _hover={{ textDecoration: "none" }}
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                size={["12px", "10px", "14px", "14px", "14px"]}
+                _hover={{ textDecoration: "none" }}
+              >
                 About us
               </Link>
-              <Link size={["12px", "10px", "14px", "14px", "14px"]}>
+              <Link
+                href="/howitworks"
+                size={["12px", "10px", "14px", "14px", "14px"]}
+                _hover={{ textDecoration: "none" }}
+              >
                 How it works
               </Link>
             </HStack>
-            <HStack ml="83px">
-              <ButtonAction
-                text="Get the App"
-                size="md"
-                bgcolor="brand"
-                color="#fff"
-              />
-            </HStack>
+
+            <Link
+              href="https://play.google.com/store/apps"
+              ml="83px"
+              isExternal
+            >
+              <ButtonAction text="Get the App" bgcolor="brand" color="#fff" />
+            </Link>
           </Box>
           <Box display={["flex", "none", "none", "none", "none"]}>
             <svg
@@ -108,17 +122,35 @@ const Header = () => {
           icon={<CloseIcon />}
           onClick={() => changeDisplay("none")}
         />
-        <Link size={["12px", "10px", "14px", "14px", "14px"]}>Home</Link>
-        <Link size={["12px", "10px", "14px", "14px", "14px"]}>About us</Link>
-        <Link size={["12px", "10px", "14px", "14px", "14px"]}>
+        <Link
+          href="/"
+          size={["12px", "10px", "14px", "14px", "14px"]}
+          _hover={{ textDecoration: "none" }}
+        >
+          Home
+        </Link>
+        <Link
+          href="/about"
+          size={["12px", "10px", "14px", "14px", "14px"]}
+          _hover={{ textDecoration: "none" }}
+        >
+          About us
+        </Link>
+        <Link
+          href="/howitworks"
+          size={["12px", "10px", "14px", "14px", "14px"]}
+          _hover={{ textDecoration: "none" }}
+        >
           How it works
         </Link>
-        <ButtonAction
-          text="Get the App"
-          size="md"
-          bgcolor="brand"
-          color="#fff"
-        />
+        <Link href="https://play.google.com/store/apps" isExternal>
+          <ButtonAction
+            text="Get the App"
+            size="md"
+            bgcolor="brand"
+            color="#fff"
+          />
+        </Link>
       </VStack>
     </Box>
   );

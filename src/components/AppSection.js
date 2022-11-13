@@ -36,33 +36,34 @@ const AppSection = () => {
           family/friend or other consumers on our platform to get a discounted
           price.
         </Text>
-        <ButtonAction
-          text="Get the App"
-          size="lg"
-          bgcolor="brand"
-          color="#fff"
-        />
+        <ButtonAction text="Get the App" bgcolor="brand" color="#fff" />
       </VStack>
       <SimpleGrid
-        columns={{ base: "1", md: "3", lg: "3", "2xl": "3" }}
+        columns={{ base: "2", md: "3", lg: "3", "2xl": "3" }}
         my="27px"
-        spacing="117px"
+        spacing={["39px", "52px", "52px", "79px", "142px"]}
         justifyContent={"center"}
-        bgImage="url('/images/appdesign.png')"
-        bgPosition="center"
+        bgImage={[
+          "url('/images/mobileapp.png')",
+          "url('/images/tabletpapp.png')",
+          "url('/images/tabletapp.png')",
+          "url('/images/laptopapp.png')",
+          "url('/images/desktopapp.png')",
+        ]}
+        bgPosition="initial"
         bgSize="contain"
         bgRepeat="no-repeat"
       >
         <GridItem>
           <Image src="./images/app1.png"></Image>
         </GridItem>
-        <GridItem>
+        <GridItem mt={["50px", "0", "0", "0", "0"]}>
           <Image src="./images/app2.png"></Image>
         </GridItem>
         <GridItem>
           <Image src="./images/app3.png"></Image>
         </GridItem>
-        <GridItem>
+        <GridItem mt={["50px", "0", "0", "0", "0"]}>
           <Image src="./images/app4.png"></Image>
         </GridItem>
         <GridItem>
