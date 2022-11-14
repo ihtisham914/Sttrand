@@ -10,6 +10,7 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import { CloseIcon } from "@chakra-ui/icons";
+import { navs } from "../links";
 // import { NavLink  } from "react-router-dom";
 import ButtonAction from "./ButtonAction";
 
@@ -22,36 +23,27 @@ const Header = () => {
       align="center"
     >
       <Flex align="center">
-        <Image
-          src="./images/logo.png"
-          h={["15px", "15px", "15px", "22px", "33px"]}
-          w={["70px", "70px", "70px", "97px", "146px"]}
-        />
+        <Link href="/">
+          <Image
+            src="./images/logo.png"
+            h={["15px", "15px", "15px", "22px", "33px"]}
+            w={["70px", "70px", "70px", "97px", "146px"]}
+          />
+        </Link>
+
         <Spacer />
         <Flex>
           <Box display={["none", "flex", "flex", "flex"]}>
             <HStack spacing="34px">
-              <Link
-                href="/"
-                size={["12px", "10px", "14px", "14px", "14px"]}
-                _hover={{ textDecoration: "none" }}
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                size={["12px", "10px", "14px", "14px", "14px"]}
-                _hover={{ textDecoration: "none" }}
-              >
-                About us
-              </Link>
-              <Link
-                href="/howitworks"
-                size={["12px", "10px", "14px", "14px", "14px"]}
-                _hover={{ textDecoration: "none" }}
-              >
-                How it works
-              </Link>
+              {navs.map((nav, index) => (
+                <Link
+                  href={nav.link}
+                  size={["12px", "10px", "14px", "14px", "14px"]}
+                  _hover={{ textDecoration: "none" }}
+                >
+                  {nav.name}
+                </Link>
+              ))}
             </HStack>
 
             <Link
@@ -120,27 +112,16 @@ const Header = () => {
           icon={<CloseIcon />}
           onClick={() => changeDisplay("none")}
         />
-        <Link
-          href="/"
-          size={["12px", "10px", "14px", "14px", "14px"]}
-          _hover={{ textDecoration: "none" }}
-        >
-          Home
-        </Link>
-        <Link
-          href="/about"
-          size={["12px", "10px", "14px", "14px", "14px"]}
-          _hover={{ textDecoration: "none" }}
-        >
-          About us
-        </Link>
-        <Link
-          href="/howitworks"
-          size={["12px", "10px", "14px", "14px", "14px"]}
-          _hover={{ textDecoration: "none" }}
-        >
-          How it works
-        </Link>
+        {navs.map((nav) => (
+          <Link
+            href={nav.link}
+            size={["12px", "10px", "14px", "14px", "14px"]}
+            _hover={{ textDecoration: "none" }}
+          >
+            {nav.name}
+          </Link>
+        ))}
+
         <Link href="https://play.google.com/store/apps" isExternal>
           <ButtonAction
             text="Get the App"

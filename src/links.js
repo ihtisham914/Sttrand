@@ -1,3 +1,18 @@
+export const navs = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "About us",
+    link: "/about",
+  },
+  {
+    name: "How it works",
+    link: "/howitworks",
+  },
+];
+
 export const company = [
   {
     name: "ABOUT US",

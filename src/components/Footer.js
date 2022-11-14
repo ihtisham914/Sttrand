@@ -28,11 +28,14 @@ const Footer = () => {
           "2xl": "row",
         }}
       >
-        <Image
-          src="./images/logo.png"
-          h={["20px", "20px", "20px", "31px", "47px"]}
-          w={["90px", "90px", "90px", "141px", "211px"]}
-        />
+        <Link href="/">
+          <Image
+            src="./images/logo.png"
+            h={["20px", "20px", "20px", "31px", "47px"]}
+            w={["90px", "90px", "90px", "141px", "211px"]}
+          />
+        </Link>
+
         <SimpleGrid
           columns={3}
           spacing={["20px", "30px", "40px", "70px", "80px"]}
