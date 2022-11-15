@@ -19,8 +19,15 @@ const Header = () => {
   return (
     <Box
       px={["50px", "136px", "136px", "223px", "278px"]}
-      mt="51px"
+      pt="51px"
+      pb="30px"
       align="center"
+      position="fixed"
+      top="0"
+      right="0"
+      zIndex={100}
+      w="100%"
+      bgColor="white"
     >
       <Flex align="center">
         <Link href="/">
@@ -104,6 +111,7 @@ const Header = () => {
         px="60px"
         py="45px"
         shadow="xl"
+        zIndex={100}
       >
         <IconButton
           alignSelf="flex-end"
