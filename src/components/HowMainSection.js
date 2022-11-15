@@ -4,7 +4,7 @@ const HowMainSection = () => {
   return (
     <Flex
       px={["50px", "136px", "136px", "223px", "278px"]}
-      my={["47px", "47px", "47px", "47px", "90px"]}
+      my={["77px", "77px", "77px", "77px", "160px"]}
       align="center"
       justify="space-between"
       gap="60px"

@@ -37,7 +37,7 @@ const ContactSection = () => {
     <Flex
       px={["50px", "136px", "136px", "223px", "278px"]}
       py={["34px", "50px", "50px", "50px", "82px"]}
-      my="50px"
+      mt={["77px", "77px", "77px", "77px", "160px"]}
       bgImage="url('/images/contactbackground.png')"
       bgPosition="center"
       bgSize="cover"
