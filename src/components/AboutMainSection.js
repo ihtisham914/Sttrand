@@ -11,7 +11,10 @@ import {
 
 const AboutMainSection = () => {
   return (
-    <Box px={["72px", "72px", "134px", "223px", "278px"]} my="90px">
+    <Box
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      mt={["47px", "47px", "47px", "47px", "90px"]}
+    >
       <Flex
         align="center"
         mb="25px"
@@ -89,7 +92,7 @@ const AboutMainSection = () => {
             textAlign={["center", "start", "start", "start", "start"]}
           >
             <Highlight
-              query="increase a consumer’s purchasing power on household items"
+              query="increase a consumer’s purchasing power"
               styles={{ fontWeight: "bold", color: "texthighlight" }}
             >
               The Market shopping experience leaves consumers bargaining on

@@ -7,14 +7,15 @@ import {
   Box,
   SimpleGrid,
   GridItem,
+  Link,
   Image,
 } from "@chakra-ui/react";
 
 const AppSection = () => {
   return (
     <Box
-      px={["72px", "72px", "134px", "223px", "278px"]}
-      py="80px"
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      py={["18px", "60px", "60px", "67px", "146px"]}
       bg="bgcolor"
     >
       <VStack align="center" spacing="50">
@@ -35,7 +36,9 @@ const AppSection = () => {
           family/friend or other consumers on our platform to get a discounted
           price.
         </Text>
-        <ButtonAction text="Get the App" bgcolor="brand" color="#fff" />
+        <Link href="https://play.google.com/store/apps" isExternal>
+          <ButtonAction text="Get the App" bgcolor="brand" color="#fff" />
+        </Link>
       </VStack>
       <SimpleGrid
         columns={{ base: "2", md: "3", lg: "3", "2xl": "3" }}

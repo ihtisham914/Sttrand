@@ -15,9 +15,9 @@ import {
 const HeroSection = () => {
   return (
     <Flex
-      minH={["120vh", "100vh", "100vh", "90vh", "90vh"]}
-      px={["72px", "72px", "134px", "223px", "278px"]}
-      mt={["47px", "90px", "90px", "90px", "90px"]}
+      minH={["85vh", "100vh", "100vh", "90vh", "90vh"]}
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      mt={["47px", "47px", "47px", "47px", "90px"]}
       alignContent="center"
       gap="22px"
       direction={{

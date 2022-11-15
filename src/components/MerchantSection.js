@@ -4,18 +4,18 @@ import ButtonAction from "./ButtonAction";
 const MerchantSection = () => {
   return (
     <VStack
-      my="90px"
-      py="65.5px"
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      py={["22.6px", "50.4px", "50.4px", "65.4px", "98px"]}
       align="center"
       justifyContent="center"
       bg="brand"
-      spacing="100px"
+      spacing={["9px", "35px", "35px", "62.4px", "101.5px"]}
       bgImage="url('/images/merchantbackground.png')"
       bgPosition="center"
       bgSize="cover"
       bgRepeat="no-repeat"
     >
-      <VStack spacing={10}>
+      <VStack spacing={["2", "4", "6", "8", "10"]}>
         <Heading
           color="#fff"
           fontSize={["9pxpx", "21px", "21px", "34px", "54px"]}

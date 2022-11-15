@@ -13,8 +13,8 @@ const PrivacyBodySection = () => {
     <Flex
       gap="20px"
       direction="column"
-      px={["72px", "72px", "134px", "223px", "278px"]}
-      my="90px"
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      my={["34px", "37px", "37px", "34px", "57px"]}
     >
       <Heading fontSize={["12px", "12px", "12px", "18px", "28px"]}>
         Welcome to Sttrand!

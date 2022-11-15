@@ -12,8 +12,8 @@ import {
 const HowItWorksSection = () => {
   return (
     <SimpleGrid
-      px={["72px", "72px", "134px", "223px", "278px"]}
-      py="180px"
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      py={["30px", "90px", "90px", "148px", "144px"]}
       bg="brand"
       color="white"
       columns={["1", "2", "2", "2", "4"]}

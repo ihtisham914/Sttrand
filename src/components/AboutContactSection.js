@@ -11,7 +11,10 @@ import {
 
 const AboutContactSection = () => {
   return (
-    <Box px={["72px", "72px", "134px", "223px", "278px"]} my="120px">
+    <Box
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      my={["19px", "50px", "50px", "76.4px", "116px"]}
+    >
       <VStack align="center" spacing={["20px", "20px", "20px", "50px", "27px"]}>
         <Heading
           align="center"
@@ -34,20 +37,37 @@ const AboutContactSection = () => {
           align="center"
           fontSize={["14px", "12px", "12px", "18px", "25px"]}
         >
-          We utilize social apps to help consumers partner together to get
-          everyday household items at great prices.
+          <Highlight
+            query="social apps"
+            styles={{
+              fontsize: "30px",
+              color: "texthighlight",
+            }}
+          >
+            We utilize social apps to help consumers partner together to get
+            everyday household items at great prices.
+          </Highlight>
         </Text>
         <HStack spacing={["20px", "20px", "50px", "70px", "100px"]}>
           <VStack>
-            <Image src="./images/whatsapp.png" />
+            <Image
+              src="./images/whatsapp.png"
+              h={["23px", "23px", "27px", "27px", "40px"]}
+            />
             <Text>Whatsapp</Text>
           </VStack>
           <VStack>
-            <Image src="./images/messenger.png" />
-            <Text>Facbook Messenger</Text>
+            <Image
+              src="./images/messenger.png"
+              h={["23px", "23px", "27px", "27px", "40px"]}
+            />
+            <Text>Messenger</Text>
           </VStack>
           <VStack>
-            <Image src="./images/chat.png" />
+            <Image
+              src="./images/chat.png"
+              h={["23px", "23px", "27px", "27px", "40px"]}
+            />
             <Text>SMS</Text>
           </VStack>
         </HStack>

@@ -18,7 +18,7 @@ const Header = () => {
   const [display, changeDisplay] = useState("none");
   return (
     <Box
-      px={["72px", "134px", "134px", "223px", "278px"]}
+      px={["50px", "136px", "136px", "223px", "278px"]}
       mt="51px"
       align="center"
     >

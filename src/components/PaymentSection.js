@@ -12,8 +12,8 @@ import {
 const PaymentSection = () => {
   return (
     <Flex
-      px={["72px", "72px", "134px", "223px", "278px"]}
-      my="90px"
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      my={["18px", "30.2px", "30.2px", "65.8px", "127px"]}
       align="center"
       gap="60px"
       direction={{

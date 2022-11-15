@@ -5,8 +5,8 @@ import { Box, Heading } from "@chakra-ui/react";
 const PrivacyMainSection = () => {
   return (
     <Box
-      px={["72px", "72px", "134px", "223px", "278px"]}
-      py="82px"
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      py={["35px", "45px", "45px", "55px", "75px"]}
       my="50px"
       color="white"
       bg="brand"

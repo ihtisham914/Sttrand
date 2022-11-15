@@ -3,8 +3,8 @@ import { Flex, Heading, Text, VStack, Image } from "@chakra-ui/react";
 const HowMainSection = () => {
   return (
     <Flex
-      px={["72px", "72px", "134px", "223px", "278px"]}
-      my="90px"
+      px={["50px", "136px", "136px", "223px", "278px"]}
+      my={["47px", "47px", "47px", "47px", "90px"]}
       align="center"
       justify="space-between"
       gap="60px"

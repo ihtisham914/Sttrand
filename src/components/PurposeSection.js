@@ -3,22 +3,22 @@ import { Box, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 const PurposeSection = () => {
   return (
     <Box
-      py="205px"
+      py={["26px", "46px", "46px", "80px", "203px"]}
       bg="bgcolor"
-      px={["72px", "72px", "134px", "223px", "278px"]}
+      px={["50px", "136px", "136px", "223px", "278px"]}
     >
       <Heading
         fontSize={["12px", "20px", "40px", "40px", "38px"]}
         fontWeight="regular"
         align="center"
-        mb="70px"
+        mb={["20px", "30px", "30px", "50px", "70px"]}
       >
         Our Purpose
       </Heading>
       <Flex
         align="center"
         justify="center"
-        gap="60px"
+        gap={["20px", "40px", "40px", "50px", "60px"]}
         direction={{
           base: "column",
           sm: "row",

@@ -14,9 +14,9 @@ import { company, privacy } from "../links";
 
 const Footer = () => {
   return (
-    <Box mt="90px">
+    <Box mt={["47px", "47px", "47px", "47px", "90px"]}>
       <Flex
-        px={["50px", "210px", "210px", "328px", "500px"]}
+        px={["50px", "210px", "210px", "328px", "506px"]}
         gap={["20px", "20px", "50px", "70px", "100px"]}
         align="center"
         mb={["30px", "40px", "40px", "60px", "74px"]}
@@ -52,7 +52,7 @@ const Footer = () => {
                 }}
                 textTransform="uppercase"
                 letterSpacing="1px"
-                mb="20px"
+                mb="15px"
               >
                 Company
               </Heading>
@@ -87,6 +87,7 @@ const Footer = () => {
                 }}
                 textTransform="uppercase"
                 letterSpacing="1px"
+                mb="5px"
               >
                 Privacy and terms
               </Heading>
@@ -121,7 +122,7 @@ const Footer = () => {
                 }}
                 textTransform="uppercase"
                 letterSpacing="1px"
-                mb="20px"
+                mb="15px"
               >
                 Help
               </Heading>
