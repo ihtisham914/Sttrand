@@ -15,9 +15,9 @@ import {
 const HeroSection = () => {
   return (
     <Flex
-      minH={["85vh", "100vh", "100vh", "90vh", "90vh"]}
+      minH={["105vh", "100vh", "100vh", "90vh", "90vh"]}
       px={["50px", "136px", "136px", "223px", "278px"]}
-      mt={["77px", "77px", "77px", "77px", "160px"]}
+      mt={["120px", "130px", "130px", "150px", "180px"]}
       alignContent="center"
       gap="22px"
       direction={{
@@ -28,7 +28,7 @@ const HeroSection = () => {
         "2xl": "row",
       }}
       bgImage={[
-        "url('/images/mobilehero.png')",
+        "url('/images/mobileherotry.png')",
         "url('/images/tablethero.png')",
         "url('/images/tablethero.png')",
         "url('/images/laptophero.png')",

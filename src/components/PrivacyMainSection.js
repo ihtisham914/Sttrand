@@ -7,7 +7,7 @@ const PrivacyMainSection = () => {
     <Box
       px={["50px", "136px", "136px", "223px", "278px"]}
       py={["35px", "45px", "45px", "55px", "75px"]}
-      mt={["77px", "77px", "77px", "77px", "160px"]}
+      mt={["120px", "130px", "130px", "150px", "180px"]}
       color="white"
       bg="brand"
     >

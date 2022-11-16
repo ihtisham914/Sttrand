@@ -13,7 +13,7 @@ const AboutMainSection = () => {
   return (
     <Box
       px={["50px", "136px", "136px", "223px", "278px"]}
-      mt={["77px", "77px", "77px", "77px", "160px"]}
+      mt={["120px", "130px", "130px", "150px", "180px"]}
     >
       <Flex
         align="center"
